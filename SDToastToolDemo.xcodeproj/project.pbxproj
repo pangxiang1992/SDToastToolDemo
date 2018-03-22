@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3742A2D920636118000CBB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A2D820636118000CBB12 /* AppDelegate.swift */; };
+		3742A2DB20636118000CBB12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A2DA20636118000CBB12 /* ViewController.swift */; };
+		3742A2DE20636118000CBB12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3742A2DC20636118000CBB12 /* Main.storyboard */; };
+		3742A2E020636118000CBB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3742A2DF20636118000CBB12 /* Assets.xcassets */; };
+		3742A2E320636119000CBB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3742A2E120636119000CBB12 /* LaunchScreen.storyboard */; };
+		3742A2EE20636119000CBB12 /* SDToastToolDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A2ED20636119000CBB12 /* SDToastToolDemoTests.swift */; };
+		3742A2F920636119000CBB12 /* SDToastToolDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A2F820636119000CBB12 /* SDToastToolDemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3742A2EA20636119000CBB12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3742A2CD20636118000CBB12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3742A2D420636118000CBB12;
+			remoteInfo = SDToastToolDemo;
+		};
+		3742A2F520636119000CBB12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3742A2CD20636118000CBB12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3742A2D420636118000CBB12;
+			remoteInfo = SDToastToolDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3742A2D520636118000CBB12 /* SDToastToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDToastToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3742A2D820636118000CBB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3742A2DA20636118000CBB12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3742A2DD20636118000CBB12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3742A2DF20636118000CBB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3742A2E220636119000CBB12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3742A2E420636119000CBB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3742A2E920636119000CBB12 /* SDToastToolDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDToastToolDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3742A2ED20636119000CBB12 /* SDToastToolDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDToastToolDemoTests.swift; sourceTree = "<group>"; };
+		3742A2EF20636119000CBB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3742A2F420636119000CBB12 /* SDToastToolDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDToastToolDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3742A2F820636119000CBB12 /* SDToastToolDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDToastToolDemoUITests.swift; sourceTree = "<group>"; };
+		3742A2FA20636119000CBB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3742A2D220636118000CBB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3742A2E620636119000CBB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3742A2F120636119000CBB12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3742A2CC20636118000CBB12 = {
+			isa = PBXGroup;
+			children = (
+				3742A2D720636118000CBB12 /* SDToastToolDemo */,
+				3742A2EC20636119000CBB12 /* SDToastToolDemoTests */,
+				3742A2F720636119000CBB12 /* SDToastToolDemoUITests */,
+				3742A2D620636118000CBB12 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3742A2D620636118000CBB12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3742A2D520636118000CBB12 /* SDToastToolDemo.app */,
+				3742A2E920636119000CBB12 /* SDToastToolDemoTests.xctest */,
+				3742A2F420636119000CBB12 /* SDToastToolDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3742A2D720636118000CBB12 /* SDToastToolDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3742A2D820636118000CBB12 /* AppDelegate.swift */,
+				3742A2DA20636118000CBB12 /* ViewController.swift */,
+				3742A2DC20636118000CBB12 /* Main.storyboard */,
+				3742A2DF20636118000CBB12 /* Assets.xcassets */,
+				3742A2E120636119000CBB12 /* LaunchScreen.storyboard */,
+				3742A2E420636119000CBB12 /* Info.plist */,
+			);
+			path = SDToastToolDemo;
+			sourceTree = "<group>";
+		};
+		3742A2EC20636119000CBB12 /* SDToastToolDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3742A2ED20636119000CBB12 /* SDToastToolDemoTests.swift */,
+				3742A2EF20636119000CBB12 /* Info.plist */,
+			);
+			path = SDToastToolDemoTests;
+			sourceTree = "<group>";
+		};
+		3742A2F720636119000CBB12 /* SDToastToolDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3742A2F820636119000CBB12 /* SDToastToolDemoUITests.swift */,
+				3742A2FA20636119000CBB12 /* Info.plist */,
+			);
+			path = SDToastToolDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3742A2D420636118000CBB12 /* SDToastToolDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3742A2FD20636119000CBB12 /* Build configuration list for PBXNativeTarget "SDToastToolDemo" */;
+			buildPhases = (
+				3742A2D120636118000CBB12 /* Sources */,
+				3742A2D220636118000CBB12 /* Frameworks */,
+				3742A2D320636118000CBB12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDToastToolDemo;
+			productName = SDToastToolDemo;
+			productReference = 3742A2D520636118000CBB12 /* SDToastToolDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3742A2E820636119000CBB12 /* SDToastToolDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3742A30020636119000CBB12 /* Build configuration list for PBXNativeTarget "SDToastToolDemoTests" */;
+			buildPhases = (
+				3742A2E520636119000CBB12 /* Sources */,
+				3742A2E620636119000CBB12 /* Frameworks */,
+				3742A2E720636119000CBB12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3742A2EB20636119000CBB12 /* PBXTargetDependency */,
+			);
+			name = SDToastToolDemoTests;
+			productName = SDToastToolDemoTests;
+			productReference = 3742A2E920636119000CBB12 /* SDToastToolDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3742A2F320636119000CBB12 /* SDToastToolDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3742A30320636119000CBB12 /* Build configuration list for PBXNativeTarget "SDToastToolDemoUITests" */;
+			buildPhases = (
+				3742A2F020636119000CBB12 /* Sources */,
+				3742A2F120636119000CBB12 /* Frameworks */,
+				3742A2F220636119000CBB12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3742A2F620636119000CBB12 /* PBXTargetDependency */,
+			);
+			name = SDToastToolDemoUITests;
+			productName = SDToastToolDemoUITests;
+			productReference = 3742A2F420636119000CBB12 /* SDToastToolDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3742A2CD20636118000CBB12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = pangxiang;
+				TargetAttributes = {
+					3742A2D420636118000CBB12 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					3742A2E820636119000CBB12 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3742A2D420636118000CBB12;
+					};
+					3742A2F320636119000CBB12 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3742A2D420636118000CBB12;
+					};
+				};
+			};
+			buildConfigurationList = 3742A2D020636118000CBB12 /* Build configuration list for PBXProject "SDToastToolDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3742A2CC20636118000CBB12;
+			productRefGroup = 3742A2D620636118000CBB12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3742A2D420636118000CBB12 /* SDToastToolDemo */,
+				3742A2E820636119000CBB12 /* SDToastToolDemoTests */,
+				3742A2F320636119000CBB12 /* SDToastToolDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3742A2D320636118000CBB12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3742A2E320636119000CBB12 /* LaunchScreen.storyboard in Resources */,
+				3742A2E020636118000CBB12 /* Assets.xcassets in Resources */,
+				3742A2DE20636118000CBB12 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3742A2E720636119000CBB12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3742A2F220636119000CBB12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3742A2D120636118000CBB12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3742A2DB20636118000CBB12 /* ViewController.swift in Sources */,
+				3742A2D920636118000CBB12 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3742A2E520636119000CBB12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3742A2EE20636119000CBB12 /* SDToastToolDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3742A2F020636119000CBB12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3742A2F920636119000CBB12 /* SDToastToolDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3742A2EB20636119000CBB12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3742A2D420636118000CBB12 /* SDToastToolDemo */;
+			targetProxy = 3742A2EA20636119000CBB12 /* PBXContainerItemProxy */;
+		};
+		3742A2F620636119000CBB12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3742A2D420636118000CBB12 /* SDToastToolDemo */;
+			targetProxy = 3742A2F520636119000CBB12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3742A2DC20636118000CBB12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3742A2DD20636118000CBB12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3742A2E120636119000CBB12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3742A2E220636119000CBB12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3742A2FB20636119000CBB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3742A2FC20636119000CBB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3742A2FE20636119000CBB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WW3B74SE3Q;
+				INFOPLIST_FILE = SDToastToolDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ishandian.app.SDToastToolDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3742A2FF20636119000CBB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WW3B74SE3Q;
+				INFOPLIST_FILE = SDToastToolDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ishandian.app.SDToastToolDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3742A30120636119000CBB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WW3B74SE3Q;
+				INFOPLIST_FILE = SDToastToolDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ishandian.app.SDToastToolDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDToastToolDemo.app/SDToastToolDemo";
+			};
+			name = Debug;
+		};
+		3742A30220636119000CBB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WW3B74SE3Q;
+				INFOPLIST_FILE = SDToastToolDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ishandian.app.SDToastToolDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDToastToolDemo.app/SDToastToolDemo";
+			};
+			name = Release;
+		};
+		3742A30420636119000CBB12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WW3B74SE3Q;
+				INFOPLIST_FILE = SDToastToolDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ishandian.app.SDToastToolDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SDToastToolDemo;
+			};
+			name = Debug;
+		};
+		3742A30520636119000CBB12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WW3B74SE3Q;
+				INFOPLIST_FILE = SDToastToolDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.ishandian.app.SDToastToolDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SDToastToolDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3742A2D020636118000CBB12 /* Build configuration list for PBXProject "SDToastToolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3742A2FB20636119000CBB12 /* Debug */,
+				3742A2FC20636119000CBB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3742A2FD20636119000CBB12 /* Build configuration list for PBXNativeTarget "SDToastToolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3742A2FE20636119000CBB12 /* Debug */,
+				3742A2FF20636119000CBB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3742A30020636119000CBB12 /* Build configuration list for PBXNativeTarget "SDToastToolDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3742A30120636119000CBB12 /* Debug */,
+				3742A30220636119000CBB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3742A30320636119000CBB12 /* Build configuration list for PBXNativeTarget "SDToastToolDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3742A30420636119000CBB12 /* Debug */,
+				3742A30520636119000CBB12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3742A2CD20636118000CBB12 /* Project object */;
+}
