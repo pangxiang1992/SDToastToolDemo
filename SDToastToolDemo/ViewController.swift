@@ -9,12 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var contentView = UIView.init(frame: CGRect.init(x: 100, y: 100, width: 300, height: 300))
+    var contentView = CartAlertView.loadFromXIB()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.view.backgroundColor = UIColor.white
-        contentView.backgroundColor = UIColor.yellow
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,6 +22,7 @@ class ViewController: UIViewController {
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
+        SDToastTool.showPopupView(contentView: contentView)
     }
 }
 

@@ -15,6 +15,10 @@
 		3742A2EE20636119000CBB12 /* SDToastToolDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A2ED20636119000CBB12 /* SDToastToolDemoTests.swift */; };
 		3742A2F920636119000CBB12 /* SDToastToolDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A2F820636119000CBB12 /* SDToastToolDemoUITests.swift */; };
 		3742A309206378CF000CBB12 /* VTPopupBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A308206378CF000CBB12 /* VTPopupBaseView.swift */; };
+		3742A30C2064962F000CBB12 /* CartAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3742A30A2064962E000CBB12 /* CartAlertView.xib */; };
+		3742A30D2064962F000CBB12 /* CartAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A30B2064962F000CBB12 /* CartAlertView.swift */; };
+		3742A310206497B5000CBB12 /* ExUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A30F206497B5000CBB12 /* ExUIView.swift */; };
+		3742A3122064AB1B000CBB12 /* SDToastTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A3112064AB1B000CBB12 /* SDToastTool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		3742A2F820636119000CBB12 /* SDToastToolDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDToastToolDemoUITests.swift; sourceTree = "<group>"; };
 		3742A2FA20636119000CBB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3742A308206378CF000CBB12 /* VTPopupBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTPopupBaseView.swift; sourceTree = "<group>"; };
+		3742A30A2064962E000CBB12 /* CartAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartAlertView.xib; sourceTree = "<group>"; };
+		3742A30B2064962F000CBB12 /* CartAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartAlertView.swift; sourceTree = "<group>"; };
+		3742A30F206497B5000CBB12 /* ExUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExUIView.swift; sourceTree = "<group>"; };
+		3742A3112064AB1B000CBB12 /* SDToastTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDToastTool.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +107,10 @@
 		3742A2D720636118000CBB12 /* SDToastToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3742A30E2064976F000CBB12 /* Extension */,
 				3742A3062063723C000CBB12 /* SDToastTool */,
+				3742A30B2064962F000CBB12 /* CartAlertView.swift */,
+				3742A30A2064962E000CBB12 /* CartAlertView.xib */,
 				3742A2D820636118000CBB12 /* AppDelegate.swift */,
 				3742A2DA20636118000CBB12 /* ViewController.swift */,
 				3742A2DC20636118000CBB12 /* Main.storyboard */,
@@ -131,6 +142,7 @@
 		3742A3062063723C000CBB12 /* SDToastTool */ = {
 			isa = PBXGroup;
 			children = (
+				3742A3112064AB1B000CBB12 /* SDToastTool.swift */,
 				3742A30720637264000CBB12 /* VTPopupBaseView */,
 			);
 			path = SDToastTool;
@@ -142,6 +154,14 @@
 				3742A308206378CF000CBB12 /* VTPopupBaseView.swift */,
 			);
 			path = VTPopupBaseView;
+			sourceTree = "<group>";
+		};
+		3742A30E2064976F000CBB12 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3742A30F206497B5000CBB12 /* ExUIView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +274,7 @@
 				3742A2E320636119000CBB12 /* LaunchScreen.storyboard in Resources */,
 				3742A2E020636118000CBB12 /* Assets.xcassets in Resources */,
 				3742A2DE20636118000CBB12 /* Main.storyboard in Resources */,
+				3742A30C2064962F000CBB12 /* CartAlertView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,9 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3742A310206497B5000CBB12 /* ExUIView.swift in Sources */,
 				3742A2DB20636118000CBB12 /* ViewController.swift in Sources */,
+				3742A3122064AB1B000CBB12 /* SDToastTool.swift in Sources */,
 				3742A309206378CF000CBB12 /* VTPopupBaseView.swift in Sources */,
 				3742A2D920636118000CBB12 /* AppDelegate.swift in Sources */,
+				3742A30D2064962F000CBB12 /* CartAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
