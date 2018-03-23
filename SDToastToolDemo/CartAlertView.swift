@@ -1,10 +1,4 @@
 //
-//  CartAlertView.swift
-//  SDOrderHD
-//
-//  Created by 朱晓峰 on 2017/11/20.
-//  Copyright © 2017年 叶木兰. All rights reserved.
-//
 
 import UIKit
 
@@ -18,13 +12,19 @@ class CartAlertView: UIView {
         return hintView
     }
     @IBAction func canclebtn() {
-//        GlobalInterface.dismissPresentingView(view: self)
+        //SDToastTool.dissmissPopupView()
+        SDToastTool.dissmissWithCallback {
+            print("cancleBtn")
+        }
     }
     
     @IBOutlet weak var cancleBtn: UIButton!
     @IBOutlet weak var surebtn: UIButton!
     @IBAction func sureBtn() {
-        SDToastTool.dissmissPopupView()
+        //SDToastTool.dissmissPopupView()
+        SDToastTool.dissmissWithCallback {
+            print("sureBtn")
+        }
     }
     @IBOutlet weak var nameLable: UILabel!
 }

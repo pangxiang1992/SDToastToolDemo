@@ -7,12 +7,13 @@
 //
 
 import UIKit
+typealias ClearClosure = ()->Void
 class VTPopupBaseView: UIView {
-    
-    private static let instance = VTPopupBaseView.init(frame: UIScreen.main.bounds)
     private var contentView: UIView!
     private var backgroundView: UIView!
     private var dissMissWithBackgroudTouch:Bool!
+    private var dismissFinishCallback:ClearClosure?
+    private static let instance = VTPopupBaseView.init(frame: UIScreen.main.bounds)
     
     private override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,16 +33,33 @@ class VTPopupBaseView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Class Public
     ///获取单例
     class func shared() -> VTPopupBaseView{
         return instance
     }
-        
-    // MARK: - Class Private
-    func showPopupView(contentView:UIView,dissmissWithBackgroundTouch:Bool){
+    
+    // MARK: - Class Public
+    func showPopupView(contentView:UIView,bgTouchDismiss:Bool){
         self.contentView = contentView
-        self.dissMissWithBackgroudTouch = dissmissWithBackgroundTouch
+        self.dissMissWithBackgroudTouch = bgTouchDismiss
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardShow(notification:)), name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyBoardDismiss(notification:)), name: .UIKeyboardWillHide, object: nil)
+        
+        self.show()
+    }
+        
+    func dismissPopupView(withCallback callback:ClearClosure?){
+        dismissFinishCallback = callback
+        
+        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
+        
+        self.dissmiss()
+    }
+    
+    // MARK: - Class Private
+    private func show(){
         let mainQueue = DispatchQueue.main
         mainQueue.async {
             if self.superview == nil{
@@ -53,14 +71,14 @@ class VTPopupBaseView: UIView {
                     }
                 }
             }
-            if contentView.superview != self{
-                contentView.center = self.backgroundView.center
-                self.addSubview(contentView)
+            if self.contentView.superview != self{
+                self.contentView.center = self.center
+                self.addSubview(self.contentView)
             }
         }
-        
     }
-    func removePopupView(){
+    
+    private func dissmiss(){
         let mainQueue = DispatchQueue.main
         mainQueue.async {
             if self.contentView != nil{
@@ -68,6 +86,30 @@ class VTPopupBaseView: UIView {
             }
             self.removeFromSuperview()
             self.dissMissWithBackgroudTouch = true
+            if let callback = self.dismissFinishCallback{
+               callback()
+            }
+        }
+    }
+    
+    // MARK: - KeyBoardCallback
+    @objc private func keyBoardShow(notification: Notification) {
+        let kbInfo = notification.userInfo
+        let duration = kbInfo?[UIKeyboardAnimationDurationUserInfoKey] as! Double
+        let kbRect = (kbInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        if contentView.sdHeight + contentView.sdY + kbRect.size.height > UIScreen.main.bounds.size.height {
+            UIView.animate(withDuration: duration) {
+                let contentCenterY = (UIScreen.main.bounds.size.height - kbRect.size.height)/2
+                self.contentView?.center = CGPoint.init(x: self.backgroundView.center.x, y: contentCenterY)
+            }
+        }
+    }
+    
+    @objc private func keyBoardDismiss(notification: Notification) {
+        let kbInfo = notification.userInfo
+        let duration = kbInfo?[UIKeyboardAnimationDurationUserInfoKey] as! Double
+        UIView.animate(withDuration: duration) {
+            self.contentView.center = self.backgroundView.center
         }
     }
     
@@ -76,10 +118,10 @@ class VTPopupBaseView: UIView {
         let view = super.hitTest(point, with: event)
         if view == self {
             if dissMissWithBackgroudTouch{
-                self.removePopupView()
+                self.dismissPopupView(withCallback: nil)
             }
         }
-           return view
+        return view
     }
 }
 

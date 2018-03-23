@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class SDToastTool: NSObject {
     /**
      通过VTPopupBaseView单例展示指定视图
@@ -15,8 +14,8 @@ class SDToastTool: NSObject {
      - parameter contenView:  需要展示的视图
      - returns:    Void
      */
-    class func showPopupView(contentView:UIView){
-        SDToastTool.showPopupView(contentView: contentView, dissmissWithBackgroundTouch: true)
+    class func showPopupView(withContentView contentView:UIView){
+        SDToastTool.showPopupView(withContentView: contentView, andDissmissWithBackgroundTouch: true)
     }
     
     /**
@@ -26,9 +25,9 @@ class SDToastTool: NSObject {
      - parameter dissmissWithBackgroundTouch:  点击背景是否dismiss
      - returns:    Void
      */
-    class func showPopupView(contentView:UIView,dissmissWithBackgroundTouch:Bool){
+    class func showPopupView(withContentView contentView:UIView,andDissmissWithBackgroundTouch bgTouchDismiss:Bool){
         let popupView = VTPopupBaseView.shared()
-        popupView.showPopupView(contentView: contentView, dissmissWithBackgroundTouch: dissmissWithBackgroundTouch)
+        popupView.showPopupView(contentView: contentView, bgTouchDismiss: bgTouchDismiss)
     }
     
     /**
@@ -36,8 +35,18 @@ class SDToastTool: NSObject {
      - returns:    Void
      */
     class func dissmissPopupView(){
-        let popupView = VTPopupBaseView.shared()
-        popupView.removePopupView()
+        SDToastTool.dissmissWithCallback(callback: nil)
     }
+    
+    /**
+     将VTPopupBaseView单例从window上移除
+     - returns:    Void
+     */
+    class func dissmissWithCallback(callback:ClearClosure?){
+        let popupView = VTPopupBaseView.shared()
+        popupView.dismissPopupView(withCallback: callback)
+        
+    }
+
 
 }
