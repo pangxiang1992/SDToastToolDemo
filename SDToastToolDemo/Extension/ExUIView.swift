@@ -1,10 +1,3 @@
-//
-//  ExUIView.swift
-//  SDOrderHD
-//
-//  Created by 朱晓峰 on 2017/11/6.
-//  Copyright © 2017年 叶木兰. All rights reserved.
-//
 
 import UIKit
 
