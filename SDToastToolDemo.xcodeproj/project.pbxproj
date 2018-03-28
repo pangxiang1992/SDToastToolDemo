@@ -18,7 +18,7 @@
 		3742A30D2064962F000CBB12 /* CartAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A30B2064962F000CBB12 /* CartAlertView.swift */; };
 		3742A310206497B5000CBB12 /* ExUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A30F206497B5000CBB12 /* ExUIView.swift */; };
 		3742A3122064AB1B000CBB12 /* SDToastTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A3112064AB1B000CBB12 /* SDToastTool.swift */; };
-		3742A3142068B080000CBB12 /* VTPopupBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A3132068B080000CBB12 /* VTPopupBaseView.swift */; };
+		3742A315206B3244000CBB12 /* VTPopupBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3742A3132068B080000CBB12 /* VTPopupBaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,11 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3742A315206B3244000CBB12 /* VTPopupBaseView.swift in Sources */,
 				3742A310206497B5000CBB12 /* ExUIView.swift in Sources */,
 				3742A2DB20636118000CBB12 /* ViewController.swift in Sources */,
 				3742A3122064AB1B000CBB12 /* SDToastTool.swift in Sources */,
 				3742A2D920636118000CBB12 /* AppDelegate.swift in Sources */,
-				3742A3142068B080000CBB12 /* VTPopupBaseView.swift in Sources */,
 				3742A30D2064962F000CBB12 /* CartAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +461,7 @@
 		3742A2FE20636119000CBB12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WW3B74SE3Q;
@@ -476,6 +477,7 @@
 		3742A2FF20636119000CBB12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WW3B74SE3Q;
